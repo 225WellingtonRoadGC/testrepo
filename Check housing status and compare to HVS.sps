@@ -107,7 +107,7 @@ CROSSTABS
   /CELLS=Count 
   /COUNT ROUND CELL.
 
-DATASET ACTIVATE DataSet2. 
+DATASET ACTIVATE DataSet.
 USE ALL. 
 COMPUTE filter_$=(REL = 0). 
 VALUE LABELS filter_$ 0 'Not Selected' 1 'Selected'. 
@@ -123,6 +123,7 @@ CROSSTABS
 
 DATASET ACTIVATE DataSet2. 
 USE ALL. 
+
 COMPUTE filter_$=(REL = 0). 
 VALUE LABELS filter_$ 0 'Not Selected' 1 'Selected'. 
 FORMATS filter_$ (f1.0). 
